@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/diegosiena/Projetos/JapaFood/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e12928e1cfd299a1cd0625105352b43f1d244c0d">
+        <dex dex="/home/diegosiena/Projetos/JapaFood/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_70084773257dea8a62f2946709ab43728829986c.jar" />
+    </item>
+
+</items>
