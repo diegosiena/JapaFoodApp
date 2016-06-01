@@ -18,11 +18,8 @@ angular.module('starter.controllers', [])
   $state.go("login");
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+.controller('PesquisarCtrl', function($scope) {
 
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
 .controller('LoginCtrl', function($scope, $stateParams, $rootScope, $state) {
@@ -30,12 +27,13 @@ angular.module('starter.controllers', [])
   $scope.loginData = {};
 
   $scope.doLogin = function () {
-    if ($scope.loginData.username == 'diego@diego.com' &&
-        $scope.loginData.password == '123456') {
+
+    // if ($scope.loginData.username == 'diego@diego.com' &&
+    //     $scope.loginData.password == '123456') {
       $rootScope.logged = true;
-      $state.go("app.sobre");
-    } else {
-      alert('Dados Incorretos!');
-    }
+      $state.go("app.home");
+    // } else {
+    //   alert('Dados Incorretos!');
+    // }
   }
 });
