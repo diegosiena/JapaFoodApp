@@ -47,6 +47,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         })
 
+    .state('app.detalhes', {
+            url: '/detalhes',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/detalhes.html'
+                }
+            }
+        })
+
     .state('app.home', {
             url: '/home',
             views: {
@@ -58,6 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     .state('app.pesquisar', {
         url: '/pesquisar',
+        controller: 'PesquisarCtrl',
         views: {
             'menuContent': {
                 templateUrl: 'templates/pesquisar.html'

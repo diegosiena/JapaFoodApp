@@ -1,5 +1,31 @@
+<style>
+  .card {
+    border-left: #e42112 solid 4px;
+  }
+
+  .item-avatar {
+    padding-left: 16px;
+  }
+
+  .item-avatar > img:first-child {
+    right: 16px;
+    left: inherit;
+  }
+
+  .item-avatar > img:first-child {
+    margin-top: 5px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+</style>
 <ion-view view-title="Pesquisar">
   <ion-content>
-    <h1>Pesquisar</h1>
+    <div ng-repeat="restaurant in restaurants" class="list card" ng-click="abreDetalhes()">
+      <div class="item">
+        <!-- <img src="mcfly.jpg"> -->
+        <h2>{{restaurant.name}}</h2>
+        <p>{{restaurant.city}}</p>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
